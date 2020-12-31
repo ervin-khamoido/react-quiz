@@ -19,7 +19,6 @@ export function fetchQuizes() {
          const quizes = [];
 
          Object.keys(response.data).forEach((key, index) => {
-            console.log(response.data[key]);
             quizes.push({
                id: key,
                name: `${index + 1}. ${response.data[key][0].quizTitle}`
